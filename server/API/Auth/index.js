@@ -61,7 +61,7 @@ Route   /google
 Des     Google Signin
 Params  none
 Access  Public
-Method  POST
+Method  GET
 */
 
 Router.get(
@@ -79,7 +79,7 @@ Route   /google/callback
 Des     Google Signin Callback
 Params  none
 Access  Public
-Method  POST
+Method  GET
 */
 
 Router.get(
