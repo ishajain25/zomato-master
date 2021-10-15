@@ -39,7 +39,6 @@ Router.get("/image/:_id", async (req,res) => {
     try {
         const {_id} = req.params;
         const menus = await ImageModel.findOne(_id);
-
         return res.json({menus})
 
     } catch (error) {

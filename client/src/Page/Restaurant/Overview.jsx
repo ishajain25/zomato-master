@@ -64,7 +64,7 @@ const Overview = () => {
 
   useEffect(() => {
     if (reduxState) {
-      dispatch(getImage(reduxState?.menuImage)).then((data) => {
+      dispatch(getImage(reduxState?.menuImages)).then((data) => {
         const images = [];
         data?.payload?.image?.images.map(({ location }) => images.push(location));
         setMenuImages(images);
@@ -121,23 +121,23 @@ const Overview = () => {
             <div>
               <Slider {...settings}>
                 <MenuSimilarRestaurantcard
-                  image="https://b.zmtcdn.com/data/pictures/chains/5/18711475/4be376adb66b75764946d00a7dcf9991_featured_v2.jpg?output-format=webp"
+                  image="https://blog.depositphotos.com/wp-content/uploads/2017/01/Exquisite-Dishes-Interview-With-Food-Photographer-Natalia-Lisovskaya-5.jpg.webp"
                   title="tea"
                 />
                 <MenuSimilarRestaurantcard
-                  image="https://b.zmtcdn.com/data/pictures/chains/5/18711475/4be376adb66b75764946d00a7dcf9991_featured_v2.jpg?output-format=webp"
+                  image="https://media.self.com/photos/5f189b76c58e27c99fbef9e3/1:1/w_768,c_limit/blackberry-vanilla-french-toast.jpg"
                   title="tea"
                 />
                 <MenuSimilarRestaurantcard
-                  image="https://b.zmtcdn.com/data/pictures/chains/5/18711475/4be376adb66b75764946d00a7dcf9991_featured_v2.jpg?output-format=webp"
+                  image="https://contrastly.com/wp-content/uploads/food-dinner-lunch-461198.jpg"
                   title="tea"
                 />
                 <MenuSimilarRestaurantcard
-                  image="https://b.zmtcdn.com/data/pictures/chains/5/18711475/4be376adb66b75764946d00a7dcf9991_featured_v2.jpg?output-format=webp"
+                  image="https://121clicks.com/wp-content/uploads/2021/05/food_photography_tips_01.jpg"
                   title="tea"
                 />
                 <MenuSimilarRestaurantcard
-                  image="https://b.zmtcdn.com/data/pictures/chains/5/18711475/4be376adb66b75764946d00a7dcf9991_featured_v2.jpg?output-format=webp"
+                  image="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2017/06/Seattle-food-photographer-00.jpg?resize=750%2C500&ssl=1"
                   title="tea"
                 />
               </Slider>

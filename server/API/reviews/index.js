@@ -49,7 +49,7 @@ Router.post("/new", passport.authenticate("jwt"), async (req, res) => {
 
 /*
 Route   /delete/
-Des     add new food review/rating
+Des     delete new food review/rating
 Params  _id
 Body    none
 Access  Public
